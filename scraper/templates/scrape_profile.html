@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LinkedIn Profile Scraper</title>
+</head>
+<body>
+    <h1>LinkedIn Profile Scraper</h1>
+    <form method="POST">
+        {% csrf_token %}
+        <label for="url">LinkedIn Profile URL:</label>
+        <input type="text" id="url" name="url" required>
+        <button type="submit">Scrape Profile</button>
+    </form>
+</body>
+</html>
